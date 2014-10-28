@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF655DA219FF4FF500BEBC6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF655DA119FF4FF500BEBC6C /* QuartzCore.framework */; };
 		FFB9E00F19FDF252005EF514 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E00E19FDF252005EF514 /* main.m */; };
 		FFB9E01219FDF252005EF514 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01119FDF252005EF514 /* AppDelegate.m */; };
 		FFB9E01519FDF252005EF514 /* Coupon_Holder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01319FDF252005EF514 /* Coupon_Holder.xcdatamodeld */; };
@@ -16,6 +17,7 @@
 		FFB9E02019FDF252005EF514 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E01F19FDF252005EF514 /* Images.xcassets */; };
 		FFB9E02319FDF252005EF514 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E02119FDF252005EF514 /* LaunchScreen.xib */; };
 		FFB9E02F19FDF252005EF514 /* Coupon_HolderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E02E19FDF252005EF514 /* Coupon_HolderTests.m */; };
+		FFB9E03919FDF448005EF514 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB9E03819FDF448005EF514 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF655DA119FF4FF500BEBC6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FFB9E00919FDF252005EF514 /* Coupon Holder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coupon Holder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9E00D19FDF252005EF514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB9E00E19FDF252005EF514 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		FFB9E02819FDF252005EF514 /* Coupon HolderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coupon HolderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9E02D19FDF252005EF514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB9E02E19FDF252005EF514 /* Coupon_HolderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coupon_HolderTests.m; sourceTree = "<group>"; };
+		FFB9E03819FDF448005EF514 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF655DA219FF4FF500BEBC6C /* QuartzCore.framework in Frameworks */,
+				FFB9E03919FDF448005EF514 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +74,8 @@
 		FFB9E00019FDF252005EF514 = {
 			isa = PBXGroup;
 			children = (
+				FF655DA119FF4FF500BEBC6C /* QuartzCore.framework */,
+				FFB9E03819FDF448005EF514 /* AVFoundation.framework */,
 				FFB9E00B19FDF252005EF514 /* Coupon Holder */,
 				FFB9E02B19FDF252005EF514 /* Coupon HolderTests */,
 				FFB9E00A19FDF252005EF514 /* Products */,
@@ -176,6 +184,7 @@
 				TargetAttributes = {
 					FFB9E00819FDF252005EF514 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = S94YC8N3NS;
 					};
 					FFB9E02719FDF252005EF514 = {
 						CreatedOnToolsVersion = 6.1;
@@ -353,9 +362,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Coupon Holder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -363,9 +376,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Coupon Holder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -422,6 +439,7 @@
 				FFB9E03419FDF252005EF514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFB9E03519FDF252005EF514 /* Build configuration list for PBXNativeTarget "Coupon HolderTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +448,7 @@
 				FFB9E03719FDF252005EF514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
