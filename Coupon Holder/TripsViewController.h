@@ -14,6 +14,10 @@
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
+@property (nonatomic, weak) IBOutlet UITableView *tView;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *editButton;
+
+- (IBAction)editButtonPressed:(id)sender;
 
 @end
 

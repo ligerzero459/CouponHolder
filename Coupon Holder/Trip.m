@@ -18,4 +18,11 @@
 @dynamic trips;
 @dynamic coupon;
 
+- (void)addCouponObject:(Coupon *)value
+{
+    NSMutableOrderedSet* tempSet = [NSMutableOrderedSet orderedSetWithOrderedSet:self.coupon];
+    [tempSet addObject:value];
+    self.coupon = tempSet;
+}
+
 @end
