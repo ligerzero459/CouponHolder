@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface AddTripViewController : NSObject
+@interface AddTripViewController : UITableViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *storeName;
+@property (weak, nonatomic) IBOutlet UIDatePicker *tripDate;
+
+
+//*****************************************
+//                 Methods
+//*****************************************
+
+- (IBAction)dismissModal:(id)sender;
+- (IBAction)dismissModalSave:(id)sender;
 
 @end
