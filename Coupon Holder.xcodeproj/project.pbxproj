@@ -12,6 +12,7 @@
 		FF655DA919FF60DC00BEBC6C /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DA819FF60DC00BEBC6C /* Trip.m */; };
 		FF655DAC19FF60DC00BEBC6C /* Trips.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DAB19FF60DC00BEBC6C /* Trips.m */; };
 		FF655DB119FF668000BEBC6C /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DB019FF668000BEBC6C /* DataManager.m */; };
+		FF655DB91A01D37200BEBC6C /* AddTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DB81A01D37200BEBC6C /* AddTripViewController.m */; };
 		FFB9E00F19FDF252005EF514 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E00E19FDF252005EF514 /* main.m */; };
 		FFB9E01219FDF252005EF514 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01119FDF252005EF514 /* AppDelegate.m */; };
 		FFB9E01519FDF252005EF514 /* Coupon_Holder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01319FDF252005EF514 /* Coupon_Holder.xcdatamodeld */; };
@@ -44,6 +45,8 @@
 		FF655DAB19FF60DC00BEBC6C /* Trips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trips.m; sourceTree = "<group>"; };
 		FF655DAF19FF668000BEBC6C /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		FF655DB019FF668000BEBC6C /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		FF655DB71A01D37200BEBC6C /* AddTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTripViewController.h; sourceTree = "<group>"; };
+		FF655DB81A01D37200BEBC6C /* AddTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTripViewController.m; sourceTree = "<group>"; };
 		FFB9E00919FDF252005EF514 /* Coupon Holder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coupon Holder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9E00D19FDF252005EF514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB9E00E19FDF252005EF514 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,10 +102,8 @@
 		FF655DAD19FF662200BEBC6C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FFB9E01619FDF252005EF514 /* TripsViewController.h */,
-				FFB9E01719FDF252005EF514 /* TripsViewController.m */,
-				FFB9E01919FDF252005EF514 /* CouponViewController.h */,
-				FFB9E01A19FDF252005EF514 /* CouponViewController.m */,
+				FF655DB61A01D36100BEBC6C /* Add View Controllers */,
+				FF655DB51A01D35400BEBC6C /* Data View Controllers */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -114,6 +115,26 @@
 				FF655DB019FF668000BEBC6C /* DataManager.m */,
 			);
 			name = Handlers;
+			sourceTree = "<group>";
+		};
+		FF655DB51A01D35400BEBC6C /* Data View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFB9E01619FDF252005EF514 /* TripsViewController.h */,
+				FFB9E01719FDF252005EF514 /* TripsViewController.m */,
+				FFB9E01919FDF252005EF514 /* CouponViewController.h */,
+				FFB9E01A19FDF252005EF514 /* CouponViewController.m */,
+			);
+			name = "Data View Controllers";
+			sourceTree = "<group>";
+		};
+		FF655DB61A01D36100BEBC6C /* Add View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF655DB71A01D37200BEBC6C /* AddTripViewController.h */,
+				FF655DB81A01D37200BEBC6C /* AddTripViewController.m */,
+			);
+			name = "Add View Controllers";
 			sourceTree = "<group>";
 		};
 		FFB9E00019FDF252005EF514 = {
@@ -281,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFB9E01B19FDF252005EF514 /* CouponViewController.m in Sources */,
+				FF655DB91A01D37200BEBC6C /* AddTripViewController.m in Sources */,
 				FFB9E01819FDF252005EF514 /* TripsViewController.m in Sources */,
 				FF655DA919FF60DC00BEBC6C /* Trip.m in Sources */,
 				FFB9E01519FDF252005EF514 /* Coupon_Holder.xcdatamodeld in Sources */,
