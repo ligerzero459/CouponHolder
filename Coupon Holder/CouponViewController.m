@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Kai Strife Productions. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "CouponViewController.h"
 
-@interface DetailViewController ()
+@interface CouponViewController ()
 
 @end
 
-@implementation DetailViewController
+@implementation CouponViewController
 
 #pragma mark - Managing the detail item
 
