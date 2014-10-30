@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "Trips.h"
+#import "Trip.h"
+#import "Coupon.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -19,7 +22,7 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
-
+- (NSArray *)getData:(NSString *)identifier;
 
 @end
 
