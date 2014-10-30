@@ -12,7 +12,6 @@
 		FF655DA919FF60DC00BEBC6C /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DA819FF60DC00BEBC6C /* Trip.m */; };
 		FF655DAC19FF60DC00BEBC6C /* Trips.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DAB19FF60DC00BEBC6C /* Trips.m */; };
 		FF655DB119FF668000BEBC6C /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DB019FF668000BEBC6C /* DataManager.m */; };
-		FF655DB41A00AE7700BEBC6C /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DB31A00AE7700BEBC6C /* DataStore.m */; };
 		FFB9E00F19FDF252005EF514 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E00E19FDF252005EF514 /* main.m */; };
 		FFB9E01219FDF252005EF514 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01119FDF252005EF514 /* AppDelegate.m */; };
 		FFB9E01519FDF252005EF514 /* Coupon_Holder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01319FDF252005EF514 /* Coupon_Holder.xcdatamodeld */; };
@@ -45,8 +44,6 @@
 		FF655DAB19FF60DC00BEBC6C /* Trips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trips.m; sourceTree = "<group>"; };
 		FF655DAF19FF668000BEBC6C /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		FF655DB019FF668000BEBC6C /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		FF655DB21A00AE7700BEBC6C /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
-		FF655DB31A00AE7700BEBC6C /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 		FFB9E00919FDF252005EF514 /* Coupon Holder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coupon Holder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9E00D19FDF252005EF514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB9E00E19FDF252005EF514 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,8 +112,6 @@
 			children = (
 				FF655DAF19FF668000BEBC6C /* DataManager.h */,
 				FF655DB019FF668000BEBC6C /* DataManager.m */,
-				FF655DB21A00AE7700BEBC6C /* DataStore.h */,
-				FF655DB31A00AE7700BEBC6C /* DataStore.m */,
 			);
 			name = Handlers;
 			sourceTree = "<group>";
@@ -290,7 +285,6 @@
 				FF655DA919FF60DC00BEBC6C /* Trip.m in Sources */,
 				FFB9E01519FDF252005EF514 /* Coupon_Holder.xcdatamodeld in Sources */,
 				FF655DAC19FF60DC00BEBC6C /* Trips.m in Sources */,
-				FF655DB41A00AE7700BEBC6C /* DataStore.m in Sources */,
 				FF655DA619FF60DB00BEBC6C /* Coupon.m in Sources */,
 				FFB9E01219FDF252005EF514 /* AppDelegate.m in Sources */,
 				FF655DB119FF668000BEBC6C /* DataManager.m in Sources */,
