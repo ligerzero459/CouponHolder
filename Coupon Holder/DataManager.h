@@ -14,7 +14,7 @@
 
 + (DataManager *)manager;
 
-- (NSArray *)getTrips;
+- (Trips *)getTrips;
 - (NSArray *)getTrip:(Trips *)trips;
 - (NSArray *)getCoupons:(Trip *)trip;
 
@@ -23,6 +23,7 @@
 - (Coupon *)newCoupon;
 
 - (void)addTrip:(Trip *)trip;
+- (void)addCoupon:(Coupon *)coupon toTrip:(Trip *)trip;
 
 - (void)removeTrip:(Trip *)trip;
 - (void)removeCoupon:(Coupon *)coupon fromTrip:(Trip *)trip;

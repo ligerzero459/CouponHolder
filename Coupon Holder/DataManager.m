@@ -52,9 +52,9 @@
 
 // Data retrieval
 
-- (NSArray *)getTrips
+- (Trips *)getTrips
 {
-    NSArray *trips = [appDelegate getData:@"Trips"];
+    Trips *trips = [[appDelegate getData:@"Trips"] objectAtIndex:0];
     
     return trips;
 }
@@ -98,14 +98,23 @@
 
 - (void)addTrip:(Trip *)trip
 {
-    Trips *trips = [[appDelegate getData:@"Trips"] objectAtIndex:0];
+    Trips *trips;
+    NSArray *tripsArray = [appDelegate getData:@"Trips"];
     
-    if (!trips)
+    if ([tripsArray count] == 0)
     {
         trips = [self newTrips];
+    } else {
+        trips = [tripsArray objectAtIndex:0];
     }
     
     [trips addTripObject:trip];
+    [self saveContext];
+}
+
+- (void)addCoupon:(Coupon *)coupon toTrip:(Trip *)trip
+{
+    [trip addCouponObject:coupon];
     [self saveContext];
 }
 
