@@ -15,4 +15,26 @@
 @dynamic index;
 @dynamic trip;
 
+- (void)addTripObject:(Trip *)value
+{
+    if ([self.trip containsObject:value]) {
+        return;
+    }
+    
+    NSMutableOrderedSet* tempSet = [NSMutableOrderedSet orderedSetWithOrderedSet:self.trip];
+    [tempSet addObject:value];
+    self.trip = tempSet;
+}
+
+- (void)removeTripObject:(Trip *)value
+{
+    if (![self.trip containsObject:value]) {
+        return;
+    }
+    
+    NSMutableOrderedSet *tempSet = [NSMutableOrderedSet orderedSetWithOrderedSet:self.trip];
+    [tempSet removeObject:value];
+    self.trip = tempSet;
+}
+
 @end
