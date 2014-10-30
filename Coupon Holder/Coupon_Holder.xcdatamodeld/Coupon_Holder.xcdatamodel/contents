@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A389" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Coupon" syncable="YES">
+    <entity name="Coupon" representedClassName="Coupon" syncable="YES">
         <attribute name="barcode" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="couponDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="discount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isPercentage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="item" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="trip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="coupon" inverseEntity="Trip" syncable="YES"/>
     </entity>
-    <entity name="Trip" syncable="YES">
+    <entity name="Trip" representedClassName="Trip" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="tripName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="coupon" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Coupon" inverseName="trip" inverseEntity="Coupon" syncable="YES"/>
         <relationship name="trips" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trips" inverseName="trip" inverseEntity="Trips" syncable="YES"/>
     </entity>
-    <entity name="Trips" syncable="YES">
+    <entity name="Trips" representedClassName="Trips" syncable="YES">
         <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="trip" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Trip" inverseName="trips" inverseEntity="Trip" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Coupon" positionX="133" positionY="-4" width="128" height="103"/>
-        <element name="Trip" positionX="-108" positionY="164" width="128" height="103"/>
+        <element name="Coupon" positionX="133" positionY="-4" width="128" height="133"/>
+        <element name="Trip" positionX="-108" positionY="164" width="128" height="118"/>
         <element name="Trips" positionX="135" positionY="225" width="128" height="73"/>
     </elements>
 </model>

@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		FF655DA219FF4FF500BEBC6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF655DA119FF4FF500BEBC6C /* QuartzCore.framework */; };
+		FF655DA619FF60DB00BEBC6C /* Coupon.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DA519FF60DB00BEBC6C /* Coupon.m */; };
+		FF655DA919FF60DC00BEBC6C /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DA819FF60DC00BEBC6C /* Trip.m */; };
+		FF655DAC19FF60DC00BEBC6C /* Trips.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DAB19FF60DC00BEBC6C /* Trips.m */; };
+		FF655DB119FF668000BEBC6C /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DB019FF668000BEBC6C /* DataManager.m */; };
+		FF655DB41A00AE7700BEBC6C /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DB31A00AE7700BEBC6C /* DataStore.m */; };
 		FFB9E00F19FDF252005EF514 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E00E19FDF252005EF514 /* main.m */; };
 		FFB9E01219FDF252005EF514 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01119FDF252005EF514 /* AppDelegate.m */; };
 		FFB9E01519FDF252005EF514 /* Coupon_Holder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01319FDF252005EF514 /* Coupon_Holder.xcdatamodeld */; };
-		FFB9E01819FDF252005EF514 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01719FDF252005EF514 /* MasterViewController.m */; };
-		FFB9E01B19FDF252005EF514 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01A19FDF252005EF514 /* DetailViewController.m */; };
+		FFB9E01819FDF252005EF514 /* TripsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01719FDF252005EF514 /* TripsViewController.m */; };
+		FFB9E01B19FDF252005EF514 /* CouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01A19FDF252005EF514 /* CouponViewController.m */; };
 		FFB9E01E19FDF252005EF514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E01C19FDF252005EF514 /* Main.storyboard */; };
 		FFB9E02019FDF252005EF514 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E01F19FDF252005EF514 /* Images.xcassets */; };
 		FFB9E02319FDF252005EF514 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E02119FDF252005EF514 /* LaunchScreen.xib */; };
@@ -32,16 +37,26 @@
 
 /* Begin PBXFileReference section */
 		FF655DA119FF4FF500BEBC6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FF655DA419FF60DB00BEBC6C /* Coupon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coupon.h; sourceTree = "<group>"; };
+		FF655DA519FF60DB00BEBC6C /* Coupon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coupon.m; sourceTree = "<group>"; };
+		FF655DA719FF60DC00BEBC6C /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		FF655DA819FF60DC00BEBC6C /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		FF655DAA19FF60DC00BEBC6C /* Trips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trips.h; sourceTree = "<group>"; };
+		FF655DAB19FF60DC00BEBC6C /* Trips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trips.m; sourceTree = "<group>"; };
+		FF655DAF19FF668000BEBC6C /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		FF655DB019FF668000BEBC6C /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		FF655DB21A00AE7700BEBC6C /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		FF655DB31A00AE7700BEBC6C /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 		FFB9E00919FDF252005EF514 /* Coupon Holder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coupon Holder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9E00D19FDF252005EF514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB9E00E19FDF252005EF514 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFB9E01019FDF252005EF514 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFB9E01119FDF252005EF514 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FFB9E01419FDF252005EF514 /* Coupon_Holder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coupon_Holder.xcdatamodel; sourceTree = "<group>"; };
-		FFB9E01619FDF252005EF514 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		FFB9E01719FDF252005EF514 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		FFB9E01919FDF252005EF514 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		FFB9E01A19FDF252005EF514 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FFB9E01619FDF252005EF514 /* TripsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripsViewController.h; sourceTree = "<group>"; };
+		FFB9E01719FDF252005EF514 /* TripsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripsViewController.m; sourceTree = "<group>"; };
+		FFB9E01919FDF252005EF514 /* CouponViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CouponViewController.h; sourceTree = "<group>"; };
+		FFB9E01A19FDF252005EF514 /* CouponViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CouponViewController.m; sourceTree = "<group>"; };
 		FFB9E01D19FDF252005EF514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFB9E01F19FDF252005EF514 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FFB9E02219FDF252005EF514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -71,6 +86,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF655DA319FF5F2700BEBC6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF655DAA19FF60DC00BEBC6C /* Trips.h */,
+				FF655DAB19FF60DC00BEBC6C /* Trips.m */,
+				FF655DA719FF60DC00BEBC6C /* Trip.h */,
+				FF655DA819FF60DC00BEBC6C /* Trip.m */,
+				FF655DA419FF60DB00BEBC6C /* Coupon.h */,
+				FF655DA519FF60DB00BEBC6C /* Coupon.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FF655DAD19FF662200BEBC6C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFB9E01619FDF252005EF514 /* TripsViewController.h */,
+				FFB9E01719FDF252005EF514 /* TripsViewController.m */,
+				FFB9E01919FDF252005EF514 /* CouponViewController.h */,
+				FFB9E01A19FDF252005EF514 /* CouponViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FF655DAE19FF664E00BEBC6C /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				FF655DAF19FF668000BEBC6C /* DataManager.h */,
+				FF655DB019FF668000BEBC6C /* DataManager.m */,
+				FF655DB21A00AE7700BEBC6C /* DataStore.h */,
+				FF655DB31A00AE7700BEBC6C /* DataStore.m */,
+			);
+			name = Handlers;
+			sourceTree = "<group>";
+		};
 		FFB9E00019FDF252005EF514 = {
 			isa = PBXGroup;
 			children = (
@@ -94,12 +144,11 @@
 		FFB9E00B19FDF252005EF514 /* Coupon Holder */ = {
 			isa = PBXGroup;
 			children = (
+				FF655DAE19FF664E00BEBC6C /* Handlers */,
+				FF655DAD19FF662200BEBC6C /* Controllers */,
+				FF655DA319FF5F2700BEBC6C /* Models */,
 				FFB9E01019FDF252005EF514 /* AppDelegate.h */,
 				FFB9E01119FDF252005EF514 /* AppDelegate.m */,
-				FFB9E01619FDF252005EF514 /* MasterViewController.h */,
-				FFB9E01719FDF252005EF514 /* MasterViewController.m */,
-				FFB9E01919FDF252005EF514 /* DetailViewController.h */,
-				FFB9E01A19FDF252005EF514 /* DetailViewController.m */,
 				FFB9E01C19FDF252005EF514 /* Main.storyboard */,
 				FFB9E01F19FDF252005EF514 /* Images.xcassets */,
 				FFB9E02119FDF252005EF514 /* LaunchScreen.xib */,
@@ -236,10 +285,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB9E01B19FDF252005EF514 /* DetailViewController.m in Sources */,
-				FFB9E01819FDF252005EF514 /* MasterViewController.m in Sources */,
+				FFB9E01B19FDF252005EF514 /* CouponViewController.m in Sources */,
+				FFB9E01819FDF252005EF514 /* TripsViewController.m in Sources */,
+				FF655DA919FF60DC00BEBC6C /* Trip.m in Sources */,
 				FFB9E01519FDF252005EF514 /* Coupon_Holder.xcdatamodeld in Sources */,
+				FF655DAC19FF60DC00BEBC6C /* Trips.m in Sources */,
+				FF655DB41A00AE7700BEBC6C /* DataStore.m in Sources */,
+				FF655DA619FF60DB00BEBC6C /* Coupon.m in Sources */,
 				FFB9E01219FDF252005EF514 /* AppDelegate.m in Sources */,
+				FF655DB119FF668000BEBC6C /* DataManager.m in Sources */,
 				FFB9E00F19FDF252005EF514 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Kai Strife Productions. All rights reserved.
 //
 
-#import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "TripsViewController.h"
+#import "CouponViewController.h"
 
-@interface MasterViewController ()
+@interface TripsViewController ()
 
 @end
 
-@implementation MasterViewController
+@implementation TripsViewController
 
 - (void)awakeFromNib {
     [super awakeFromNib];
