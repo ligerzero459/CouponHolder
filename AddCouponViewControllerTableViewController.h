@@ -10,4 +10,7 @@
 
 @interface AddCouponViewControllerTableViewController : UITableViewController
 
+- (IBAction)dismissModal:(id)sender;
+- (IBAction)dismissModalSave:(id)sender;
+
 @end
