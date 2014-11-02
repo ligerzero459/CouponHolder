@@ -14,6 +14,10 @@
 		FF655DB119FF668000BEBC6C /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DB019FF668000BEBC6C /* DataManager.m */; };
 		FF655DB91A01D37200BEBC6C /* AddTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DB81A01D37200BEBC6C /* AddTripViewController.m */; };
 		FF655DBF1A02E50000BEBC6C /* AddCouponViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DBE1A02E50000BEBC6C /* AddCouponViewControllerTableViewController.m */; };
+		FF655DC31A034A7300BEBC6C /* CouponCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DC21A034A7300BEBC6C /* CouponCameraViewController.m */; };
+		FF655DC61A034A8200BEBC6C /* BarcodeCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF655DC51A034A8200BEBC6C /* BarcodeCameraViewController.m */; };
+		FFA355F51A05931F00D6ED3B /* IG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA355F41A05931F00D6ED3B /* IG.framework */; };
+		FFA355F81A05C8EE00D6ED3B /* TripTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA355F71A05C8EE00D6ED3B /* TripTableViewController.m */; };
 		FFB9E00F19FDF252005EF514 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E00E19FDF252005EF514 /* main.m */; };
 		FFB9E01219FDF252005EF514 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01119FDF252005EF514 /* AppDelegate.m */; };
 		FFB9E01519FDF252005EF514 /* Coupon_Holder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E01319FDF252005EF514 /* Coupon_Holder.xcdatamodeld */; };
@@ -50,6 +54,13 @@
 		FF655DB81A01D37200BEBC6C /* AddTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTripViewController.m; sourceTree = "<group>"; };
 		FF655DBD1A02E50000BEBC6C /* AddCouponViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCouponViewControllerTableViewController.h; path = ../AddCouponViewControllerTableViewController.h; sourceTree = "<group>"; };
 		FF655DBE1A02E50000BEBC6C /* AddCouponViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCouponViewControllerTableViewController.m; path = ../AddCouponViewControllerTableViewController.m; sourceTree = "<group>"; };
+		FF655DC11A034A7300BEBC6C /* CouponCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponCameraViewController.h; sourceTree = "<group>"; };
+		FF655DC21A034A7300BEBC6C /* CouponCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponCameraViewController.m; sourceTree = "<group>"; };
+		FF655DC41A034A8200BEBC6C /* BarcodeCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeCameraViewController.h; sourceTree = "<group>"; };
+		FF655DC51A034A8200BEBC6C /* BarcodeCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeCameraViewController.m; sourceTree = "<group>"; };
+		FFA355F41A05931F00D6ED3B /* IG.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IG.framework; path = Library/Frameworks/IG.framework; sourceTree = DEVELOPER_DIR; };
+		FFA355F61A05C8EE00D6ED3B /* TripTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripTableViewController.h; sourceTree = "<group>"; };
+		FFA355F71A05C8EE00D6ED3B /* TripTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripTableViewController.m; sourceTree = "<group>"; };
 		FFB9E00919FDF252005EF514 /* Coupon Holder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coupon Holder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9E00D19FDF252005EF514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB9E00E19FDF252005EF514 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFA355F51A05931F00D6ED3B /* IG.framework in Frameworks */,
 				FF655DA219FF4FF500BEBC6C /* QuartzCore.framework in Frameworks */,
 				FFB9E03919FDF448005EF514 /* AVFoundation.framework in Frameworks */,
 			);
@@ -92,6 +104,7 @@
 		FF655DA319FF5F2700BEBC6C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FFB9E01319FDF252005EF514 /* Coupon_Holder.xcdatamodeld */,
 				FF655DAA19FF60DC00BEBC6C /* Trips.h */,
 				FF655DAB19FF60DC00BEBC6C /* Trips.m */,
 				FF655DA719FF60DC00BEBC6C /* Trip.h */,
@@ -105,6 +118,7 @@
 		FF655DAD19FF662200BEBC6C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FF655DC01A034A4900BEBC6C /* Special View Controllers */,
 				FF655DB61A01D36100BEBC6C /* Add View Controllers */,
 				FF655DB51A01D35400BEBC6C /* Data View Controllers */,
 			);
@@ -125,6 +139,8 @@
 			children = (
 				FFB9E01619FDF252005EF514 /* TripsViewController.h */,
 				FFB9E01719FDF252005EF514 /* TripsViewController.m */,
+				FFA355F61A05C8EE00D6ED3B /* TripTableViewController.h */,
+				FFA355F71A05C8EE00D6ED3B /* TripTableViewController.m */,
 				FFB9E01919FDF252005EF514 /* CouponViewController.h */,
 				FFB9E01A19FDF252005EF514 /* CouponViewController.m */,
 			);
@@ -142,9 +158,21 @@
 			name = "Add View Controllers";
 			sourceTree = "<group>";
 		};
+		FF655DC01A034A4900BEBC6C /* Special View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF655DC11A034A7300BEBC6C /* CouponCameraViewController.h */,
+				FF655DC21A034A7300BEBC6C /* CouponCameraViewController.m */,
+				FF655DC41A034A8200BEBC6C /* BarcodeCameraViewController.h */,
+				FF655DC51A034A8200BEBC6C /* BarcodeCameraViewController.m */,
+			);
+			name = "Special View Controllers";
+			sourceTree = "<group>";
+		};
 		FFB9E00019FDF252005EF514 = {
 			isa = PBXGroup;
 			children = (
+				FFA355F41A05931F00D6ED3B /* IG.framework */,
 				FF655DA119FF4FF500BEBC6C /* QuartzCore.framework */,
 				FFB9E03819FDF448005EF514 /* AVFoundation.framework */,
 				FFB9E00B19FDF252005EF514 /* Coupon Holder */,
@@ -173,7 +201,6 @@
 				FFB9E01C19FDF252005EF514 /* Main.storyboard */,
 				FFB9E01F19FDF252005EF514 /* Images.xcassets */,
 				FFB9E02119FDF252005EF514 /* LaunchScreen.xib */,
-				FFB9E01319FDF252005EF514 /* Coupon_Holder.xcdatamodeld */,
 				FFB9E00C19FDF252005EF514 /* Supporting Files */,
 			);
 			path = "Coupon Holder";
@@ -309,12 +336,15 @@
 				FFB9E01B19FDF252005EF514 /* CouponViewController.m in Sources */,
 				FF655DB91A01D37200BEBC6C /* AddTripViewController.m in Sources */,
 				FFB9E01819FDF252005EF514 /* TripsViewController.m in Sources */,
+				FF655DC31A034A7300BEBC6C /* CouponCameraViewController.m in Sources */,
 				FF655DBF1A02E50000BEBC6C /* AddCouponViewControllerTableViewController.m in Sources */,
 				FF655DA919FF60DC00BEBC6C /* Trip.m in Sources */,
 				FFB9E01519FDF252005EF514 /* Coupon_Holder.xcdatamodeld in Sources */,
 				FF655DAC19FF60DC00BEBC6C /* Trips.m in Sources */,
+				FFA355F81A05C8EE00D6ED3B /* TripTableViewController.m in Sources */,
 				FF655DA619FF60DB00BEBC6C /* Coupon.m in Sources */,
 				FFB9E01219FDF252005EF514 /* AppDelegate.m in Sources */,
+				FF655DC61A034A8200BEBC6C /* BarcodeCameraViewController.m in Sources */,
 				FF655DB119FF668000BEBC6C /* DataManager.m in Sources */,
 				FFB9E00F19FDF252005EF514 /* main.m in Sources */,
 			);
@@ -392,9 +422,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -427,8 +462,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -440,9 +480,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/Infragistics/NUCLiOS,
+					2014,
+					Volume,
+					2/Framework,
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				INFOPLIST_FILE = "Coupon Holder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ryanmottley/Documents/Projects/Cocoa-Touch-Barcodes/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Coupon_Holder-feulnwpmokacrzfrjkzlcdglbwjf/Build/Products/Debug-iphoneos",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -454,9 +508,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/Infragistics/NUCLiOS,
+					2014,
+					Volume,
+					2/Framework,
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				INFOPLIST_FILE = "Coupon Holder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ryanmottley/Documents/Projects/Cocoa-Touch-Barcodes/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Coupon_Holder-feulnwpmokacrzfrjkzlcdglbwjf/Build/Products/Debug-iphoneos",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
