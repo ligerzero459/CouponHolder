@@ -20,8 +20,23 @@
 
 - (void)addCouponObject:(Coupon *)value
 {
+    if (![self.coupon containsObject:value]) {
+        return;
+    }
+    
     NSMutableOrderedSet* tempSet = [NSMutableOrderedSet orderedSetWithOrderedSet:self.coupon];
     [tempSet addObject:value];
+    self.coupon = tempSet;
+}
+
+- (void)removeCouponObject:(Coupon *)value
+{
+    if (![self.coupon containsObject:value]) {
+        return;
+    }
+    
+    NSMutableOrderedSet *tempSet = [NSMutableOrderedSet orderedSetWithOrderedSet:self.coupon];
+    [tempSet removeObject:value];
     self.coupon = tempSet;
 }
 
