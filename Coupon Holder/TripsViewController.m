@@ -7,6 +7,7 @@
 //
 
 #import "TripsViewController.h"
+#import "TripTableViewController.h"
 
 #import "DataManager.h"
 
@@ -44,14 +45,19 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    Trips *tempTrips = [[DataManager manager] getTrips];
-    allTrips = [[DataManager manager] getTrip:tempTrips];
+    allTrips = [[DataManager manager] getTrip];
 }
 
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
+    if ([segue.identifier isEqualToString:@"couponsSegue"]) {
+        TripTableViewController *ttvc = segue.destinationViewController;
+        
+        NSIndexPath *indexPath = [tView indexPathForSelectedRow];
+        
+        [ttvc setTrip:[allTrips objectAtIndex:[indexPath row]]];
+    }
 }
 
 #pragma mark - Table View
@@ -61,7 +67,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[[DataManager manager] getTrip:[[DataManager manager] getTrips]] count];
+    return [[[DataManager manager] getTrip] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -88,8 +94,7 @@
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         
         [[DataManager manager] removeTrip:[allTrips objectAtIndex:[indexPath row]]];
-        Trips *tempTrips = [[DataManager manager] getTrips];
-        allTrips = [[DataManager manager] getTrip:tempTrips];
+        allTrips = [[DataManager manager] getTrip];
         
         [tableView endUpdates];
 
@@ -106,6 +111,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if ([tView isEditing])
+    {
+        return NO;
+    }
+    else return YES;
 }
 
 //*****************************************
