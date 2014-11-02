@@ -10,4 +10,6 @@
 
 @interface BarcodeCameraViewController : UIViewController
 
+- (IBAction)dismissModal:(id)sender;
+
 @end

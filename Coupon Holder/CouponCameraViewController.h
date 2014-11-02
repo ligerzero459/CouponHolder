@@ -10,4 +10,6 @@
 
 @interface CouponCameraViewController : UIViewController
 
+- (IBAction)dismissModal:(id)sender;
+
 @end
