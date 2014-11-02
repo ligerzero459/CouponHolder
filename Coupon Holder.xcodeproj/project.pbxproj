@@ -26,19 +26,8 @@
 		FFB9E01E19FDF252005EF514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E01C19FDF252005EF514 /* Main.storyboard */; };
 		FFB9E02019FDF252005EF514 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E01F19FDF252005EF514 /* Images.xcassets */; };
 		FFB9E02319FDF252005EF514 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB9E02119FDF252005EF514 /* LaunchScreen.xib */; };
-		FFB9E02F19FDF252005EF514 /* Coupon_HolderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E02E19FDF252005EF514 /* Coupon_HolderTests.m */; };
 		FFB9E03919FDF448005EF514 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB9E03819FDF448005EF514 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FFB9E02919FDF252005EF514 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FFB9E00119FDF252005EF514 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FFB9E00819FDF252005EF514;
-			remoteInfo = "Coupon Holder";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FF655DA119FF4FF500BEBC6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -74,7 +63,6 @@
 		FFB9E01D19FDF252005EF514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFB9E01F19FDF252005EF514 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FFB9E02219FDF252005EF514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FFB9E02819FDF252005EF514 /* Coupon HolderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coupon HolderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9E02D19FDF252005EF514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB9E02E19FDF252005EF514 /* Coupon_HolderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coupon_HolderTests.m; sourceTree = "<group>"; };
 		FFB9E03819FDF448005EF514 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -88,13 +76,6 @@
 				FFA355F51A05931F00D6ED3B /* IG.framework in Frameworks */,
 				FF655DA219FF4FF500BEBC6C /* QuartzCore.framework in Frameworks */,
 				FFB9E03919FDF448005EF514 /* AVFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FFB9E02519FDF252005EF514 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				FFB9E00919FDF252005EF514 /* Coupon Holder.app */,
-				FFB9E02819FDF252005EF514 /* Coupon HolderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,24 +232,6 @@
 			productReference = FFB9E00919FDF252005EF514 /* Coupon Holder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FFB9E02719FDF252005EF514 /* Coupon HolderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FFB9E03519FDF252005EF514 /* Build configuration list for PBXNativeTarget "Coupon HolderTests" */;
-			buildPhases = (
-				FFB9E02419FDF252005EF514 /* Sources */,
-				FFB9E02519FDF252005EF514 /* Frameworks */,
-				FFB9E02619FDF252005EF514 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FFB9E02A19FDF252005EF514 /* PBXTargetDependency */,
-			);
-			name = "Coupon HolderTests";
-			productName = "Coupon HolderTests";
-			productReference = FFB9E02819FDF252005EF514 /* Coupon HolderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -282,10 +244,6 @@
 					FFB9E00819FDF252005EF514 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = S94YC8N3NS;
-					};
-					FFB9E02719FDF252005EF514 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = FFB9E00819FDF252005EF514;
 					};
 				};
 			};
@@ -303,7 +261,6 @@
 			projectRoot = "";
 			targets = (
 				FFB9E00819FDF252005EF514 /* Coupon Holder */,
-				FFB9E02719FDF252005EF514 /* Coupon HolderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -316,13 +273,6 @@
 				FFB9E01E19FDF252005EF514 /* Main.storyboard in Resources */,
 				FFB9E02319FDF252005EF514 /* LaunchScreen.xib in Resources */,
 				FFB9E02019FDF252005EF514 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FFB9E02619FDF252005EF514 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,23 +300,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFB9E02419FDF252005EF514 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFB9E02F19FDF252005EF514 /* Coupon_HolderTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FFB9E02A19FDF252005EF514 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FFB9E00819FDF252005EF514 /* Coupon Holder */;
-			targetProxy = FFB9E02919FDF252005EF514 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FFB9E01C19FDF252005EF514 /* Main.storyboard */ = {
@@ -530,40 +464,6 @@
 			};
 			name = Release;
 		};
-		FFB9E03619FDF252005EF514 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Coupon HolderTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coupon Holder.app/Coupon Holder";
-			};
-			name = Debug;
-		};
-		FFB9E03719FDF252005EF514 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Coupon HolderTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coupon Holder.app/Coupon Holder";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,15 +481,6 @@
 			buildConfigurations = (
 				FFB9E03319FDF252005EF514 /* Debug */,
 				FFB9E03419FDF252005EF514 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FFB9E03519FDF252005EF514 /* Build configuration list for PBXNativeTarget "Coupon HolderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FFB9E03619FDF252005EF514 /* Debug */,
-				FFB9E03719FDF252005EF514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
