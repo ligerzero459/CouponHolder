@@ -15,8 +15,10 @@
 + (DataManager *)manager;
 
 - (Trips *)getTrips;
-- (NSArray *)getTrip:(Trips *)trips;
+- (NSArray *)getTrip;
+- (Trip *)getTripAtIndex:(NSUInteger)atIndex;
 - (NSArray *)getCoupons:(Trip *)trip;
+- (Coupon *)getCouponFromTrip:(Trip *)trip atIndex:(NSUInteger)index;
 
 - (Trips *)newTrips;
 - (Trip *)newTrip;

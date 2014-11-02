@@ -20,8 +20,7 @@
     AppDelegate *appDelegate;
 }
 
-+ (DataManager *)manager
-{
++ (DataManager *)manager {
     static DataManager *manager = nil;
     
     if (!manager)
@@ -32,13 +31,11 @@
     return manager;
 }
 
-+ (id)allocWithZone:(NSZone *)zone
-{
++ (id)allocWithZone:(NSZone *)zone {
     return [self manager];
 }
 
-- (id)init
-{
+- (id)init {
     self = [super init];
     
     if (self)
@@ -52,52 +49,57 @@
 
 // Data retrieval
 
-- (Trips *)getTrips
-{
+- (Trips *)getTrips {
     Trips *trips = [[appDelegate getData:@"Trips"] objectAtIndex:0];
     
     return trips;
 }
 
-- (NSArray *)getTrip:(Trips *)trips
-{
-    NSArray *trip = [[trips trip] array];
+- (NSArray *)getTrip {
+    NSArray *trip = [[[self getTrips] trip] array];
     
     return trip;
 }
 
-- (NSArray *)getCoupons:(Trip *)trip
-{
+- (Trip *)getTripAtIndex:(NSUInteger)atIndex {
+    Trip *trip = [[[[self getTrips] trip] array] objectAtIndex:atIndex];
+    
+    return trip;
+}
+
+- (NSArray *)getCoupons:(Trip *)trip {
     NSArray *coupons = [[trip coupon] array];
     
     return coupons;
 }
 
+- (Coupon *)getCouponFromTrip:(Trip *)trip atIndex:(NSUInteger)index {
+    Coupon *coupon = [[[trip coupon] array] objectAtIndex:index];
+    
+    return coupon;
+}
+
 // Data creation
 
-- (Trips *)newTrips
-{
+- (Trips *)newTrips {
     Trips *trips = [NSEntityDescription insertNewObjectForEntityForName:@"Trips" inManagedObjectContext:self.managedObjectContext];
     
     return trips;
 }
 
-- (Trip *)newTrip
-{
+- (Trip *)newTrip {
     Trip *trip = [NSEntityDescription insertNewObjectForEntityForName:@"Trip" inManagedObjectContext:self.managedObjectContext];
     
     return trip;
 }
 
-- (Coupon *)newCoupon
-{
+- (Coupon *)newCoupon {
     Coupon *coupon = [NSEntityDescription insertNewObjectForEntityForName:@"Coupon" inManagedObjectContext:self.managedObjectContext];
     
     return coupon;
 }
 
-- (void)addTrip:(Trip *)trip
-{
+- (void)addTrip:(Trip *)trip {
     Trips *trips;
     NSArray *tripsArray = [appDelegate getData:@"Trips"];
     
@@ -112,29 +114,25 @@
     [self saveContext];
 }
 
-- (void)addCoupon:(Coupon *)coupon toTrip:(Trip *)trip
-{
+- (void)addCoupon:(Coupon *)coupon toTrip:(Trip *)trip {
     [trip addCouponObject:coupon];
     [self saveContext];
 }
 
-- (void)removeTrip:(Trip *)trip
-{
+- (void)removeTrip:(Trip *)trip {
     [[[appDelegate getData:@"Trips"] objectAtIndex:0] removeTripObject:trip];
     
     [self saveContext];
 }
 
-- (void)removeCoupon:(Coupon *)coupon fromTrip:(Trip *)trip
-{
+- (void)removeCoupon:(Coupon *)coupon fromTrip:(Trip *)trip {
     [trip removeCouponObject:coupon];
     [self.managedObjectContext deleteObject:coupon];
     
     [self saveContext];
 }
 
-- (void)saveContext
-{
+- (void)saveContext {
     [appDelegate saveContext];
 }
 
